@@ -5,8 +5,9 @@ def convert_hex_to_base64(hex:str)->str:
     for h in hex:
         s += hex_to_binary(h)
 
-def hex_to_binary(h:str) -> str:
+def hex_to_binary(h):
     '''Converts a hexidecimal string to a binary string'''
+    h = h.capitalize()
     s = ""
     match h:
         case "0":
@@ -41,5 +42,8 @@ def hex_to_binary(h:str) -> str:
             s = "1110"
         case "F":
             s = "1111"
+    #print(s)
     return s
 
+s = hex_to_binary("a")
+print(s)
