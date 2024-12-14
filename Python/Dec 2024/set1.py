@@ -6,6 +6,7 @@ def convert_hex_to_base64(hex:str)->str:
         s += hex_to_binary(h)
 
 def hex_to_binary(h:str) -> str:
+    '''Converts a hexidecimal string to a binary string'''
     s = ""
     match h:
         case "0":
