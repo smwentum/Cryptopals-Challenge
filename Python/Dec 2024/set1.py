@@ -4,6 +4,7 @@ def convert_hex_to_base64(hex:str)->str:
     s = "";
     for h in hex:
         s += hex_to_binary(h)
+    return s
 
 def hex_to_binary(h):
     '''Converts a hexidecimal string to a binary string'''
@@ -44,6 +45,3 @@ def hex_to_binary(h):
             s = "1111"
     #print(s)
     return s
-
-s = hex_to_binary("a")
-print(s)
