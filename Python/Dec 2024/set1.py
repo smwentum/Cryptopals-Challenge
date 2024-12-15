@@ -172,7 +172,7 @@ def convert_binary_str_to_base_64(b:str)->str:
         case "101011":
             s = "r"
         case "101100":
-            s = "w"
+            s = "s"
         case "101101":
             s = "t"
         case "101110":

@@ -288,3 +288,175 @@ def test_convert_binary_to_base_64_31():
     assert b == 'f'
 
 
+def test_convert_binary_to_base_64_32():
+    '''doing 0 should get g'''
+    b = convert_binary_str_to_base_64("100000")
+    assert b == 'g'
+
+def test_convert_binary_to_base_64_33():
+    '''doing 33 should get h'''
+    b = convert_binary_str_to_base_64("100001")
+    assert b == 'h'
+
+def test_convert_binary_to_base_64_34():
+    '''doing 34 should get i'''
+    b = convert_binary_str_to_base_64("100010")
+    assert b == 'i'
+
+def test_convert_binary_to_base_64_35():
+    '''doing 35 should get j'''
+    b = convert_binary_str_to_base_64("100011")
+    assert b == 'j'
+
+
+def test_convert_binary_to_base_64_36():
+    '''doing 36 should get k'''
+    b = convert_binary_str_to_base_64("100100")
+    assert b == 'k'
+
+def test_convert_binary_to_base_64_37():
+    '''doing 37 should get l'''
+    b = convert_binary_str_to_base_64("100101")
+    assert b == 'l'
+
+def test_convert_binary_to_base_64_38():
+    '''doing 38 should get m'''
+    b = convert_binary_str_to_base_64("100110")
+    assert b == 'm'
+
+def test_convert_binary_to_base_64_39():
+    '''doing 39 should get n'''
+    b = convert_binary_str_to_base_64("100111")
+    assert b == 'n'
+
+
+
+
+def test_convert_binary_to_base_64_40():
+    '''doing 40 should get o'''
+    b = convert_binary_str_to_base_64("101000")
+    assert b == 'o'
+
+def test_convert_binary_to_base_64_41():
+    '''doing 41 should get p'''
+    b = convert_binary_str_to_base_64("101001")
+    assert b == 'p'
+
+def test_convert_binary_to_base_64_42():
+    '''doing 42 should get q'''
+    b = convert_binary_str_to_base_64("101010")
+    assert b == 'q'
+
+def test_convert_binary_to_base_64_43():
+    '''doing 43 should get r'''
+    b = convert_binary_str_to_base_64("101011")
+    assert b == 'r'
+
+
+def test_convert_binary_to_base_64_44():
+    '''doing 44 should get s'''
+    b = convert_binary_str_to_base_64("101100")
+    assert b == 's'
+
+def test_convert_binary_to_base_64_45():
+    '''doing 45 should get t'''
+    b = convert_binary_str_to_base_64("101101")
+    assert b == 't'
+
+def test_convert_binary_to_base_64_46():
+    '''doing 46 should get u'''
+    b = convert_binary_str_to_base_64("101110")
+    assert b == 'u'
+
+def test_convert_binary_to_base_64_47():
+    '''doing 47 should get v'''
+    b = convert_binary_str_to_base_64("101111")
+    assert b == 'v'
+
+
+
+def test_convert_binary_to_base_64_48():
+    '''doing 48 should get w'''
+    b = convert_binary_str_to_base_64("110000")
+    assert b == 'w'
+
+# def test_convert_binary_to_base_64_17():
+#     '''doing 17 should get R'''
+#     b = convert_binary_str_to_base_64("110001")
+#     assert b == 'R'
+
+# def test_convert_binary_to_base_64_18():
+#     '''doing 18 should get S'''
+#     b = convert_binary_str_to_base_64("110010")
+#     assert b == 'S'
+
+
+# def test_convert_binary_to_base_64_19():
+#     '''doing 19 should get T'''
+#     b = convert_binary_str_to_base_64("110011")
+#     assert b == 'T'
+
+
+# def test_convert_binary_to_base_64_20():
+#     '''doing 20 should get U'''
+#     b = convert_binary_str_to_base_64("110100")
+#     assert b == 'U'
+
+# def test_convert_binary_to_base_64_21():
+#     '''doing 21 should get V'''
+#     b = convert_binary_str_to_base_64("110101")
+#     assert b == 'V'
+
+# def test_convert_binary_to_base_64_22():
+#     '''doing 22 should get W'''
+#     b = convert_binary_str_to_base_64("110110")
+#     assert b == 'W'
+
+# def test_convert_binary_to_base_64_23():
+#     '''doing 23 should get X'''
+#     b = convert_binary_str_to_base_64("110111")
+#     assert b == 'X'
+
+
+# def test_convert_binary_to_base_64_24():
+#     '''doing 24 should get Y'''
+#     b = convert_binary_str_to_base_64("111000")
+#     assert b == 'Y'
+
+# def test_convert_binary_to_base_64_25():
+#     '''doing 25 should get Z'''
+#     b = convert_binary_str_to_base_64("111001")
+#     assert b == 'Z'
+
+# def test_convert_binary_to_base_64_26():
+#     '''doing 26 should get a'''
+#     b = convert_binary_str_to_base_64("111010")
+#     assert b == 'a'
+
+# def test_convert_binary_to_base_64_27():
+#     '''doing 27 should get b'''
+#     b = convert_binary_str_to_base_64("111011")
+#     assert b == 'b'
+
+
+# def test_convert_binary_to_base_64_28():
+#     '''doing 28 should get c'''
+#     b = convert_binary_str_to_base_64("111100")
+#     assert b == 'c'
+
+# def test_convert_binary_to_base_64_29():
+#     '''doing 29 should get d'''
+#     b = convert_binary_str_to_base_64("111101")
+#     assert b == 'd'
+
+# def test_convert_binary_to_base_64_30():
+#     '''doing 30 should get e'''
+#     b = convert_binary_str_to_base_64("111110")
+#     assert b == 'e'
+
+# def test_convert_binary_to_base_64_31():
+#     '''doing 31 should get f'''
+#     b = convert_binary_str_to_base_64("111111")
+#     assert b == 'f'
+
+
