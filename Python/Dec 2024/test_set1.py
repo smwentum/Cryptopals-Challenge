@@ -391,10 +391,10 @@ def test_convert_binary_to_base_64_50():
     assert b == 'y'
 
 
-# def test_convert_binary_to_base_64_19():
-#     '''doing 19 should get T'''
-#     b = convert_binary_str_to_base_64("110011")
-#     assert b == 'T'
+def test_convert_binary_to_base_64_51():
+    '''doing 51 should get z'''
+    b = convert_binary_str_to_base_64("110011")
+    assert b == 'z'
 
 
 # def test_convert_binary_to_base_64_20():
