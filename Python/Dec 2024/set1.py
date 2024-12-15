@@ -14,41 +14,82 @@ def hex_to_binary(h:str):
     h = h.upper()
     s = ""
     #print(h)
-    match h:
-        case "0":
-            s = "0000"
-        case "1":
-            s = "0001"
-        case "2":
-            s = "0010"
-        case "3":
-            s = "0011"
-        case "4":
-            s = "0100"
-        case "5":
-            s = "0101"
-        case "6":
-            s = "0110"
-        case "7":
-            s = "0111"
-        case "8":
-            s = "1000"
-        case "9":
-            s = "1001"
-        case "A":
-            s = "1010"
-        case "B":
-            s = "1011"
-        case "C":
-            s = "1100"
-        case "D":
-            s = "1101"
-        case "E":
-            s = "1110"
-        case "F":
-            s = "1111"
+    for h1 in h:
+        match h1:
+            case "0":
+                s += "0000"
+            case "1":
+                s += "0001"
+            case "2":
+                s += "0010"
+            case "3":
+                s += "0011"
+            case "4":
+                s += "0100"
+            case "5":
+                s += "0101"
+            case "6":
+                s += "0110"
+            case "7":
+                s += "0111"
+            case "8":
+                s += "1000"
+            case "9":
+                s += "1001"
+            case "A":
+                s += "1010"
+            case "B":
+                s += "1011"
+            case "C":
+                s += "1100"
+            case "D":
+                s += "1101"
+            case "E":
+                s += "1110"
+            case "F":
+                s += "1111"
     #print(s)
     return s
+
+def binary_to_hex(h:str):
+    '''Converts a binary string to a hexidecimal string'''
+    s = ""
+    match h:
+        case "0000":
+            s += "0"
+        case "0001":
+            s += "1"
+        case "0010":
+            s += "2"
+        case "0011":
+            s += "3"
+        case "0100":
+            s += "4"
+        case "0101":
+            s += "5"
+        case "0110":
+            s += "6"
+        case "0111":
+            s += "7"
+        case "1000":
+            s += "8"
+        case "1001":
+            s += "9"
+        case "1010":
+            s += "A"
+        case "1011":
+            s += "B"
+        case "1100":
+            s += "C"
+        case "1101":
+            s += "D"
+        case "1110":
+            s += "E"
+        case "1111":
+            s += "F"
+    #print(s)
+    return s
+
 
 
 def convert_binary_to_base_64(b:str)-> str:
@@ -202,3 +243,27 @@ def convert_hex_to_base_64(b)-> str:
     #print(s2)
     return convert_binary_to_base_64(s2)
 
+def xor(a,b)->str:
+    a1 = hex_to_binary(a)
+    b1 = hex_to_binary(b)
+    # print(a1)
+    # print(b1)
+    s =""
+    for i,_ in enumerate(a1):
+        if a1[i] == b1[i]:
+            s+= "0"
+        else:
+            s+="1"
+    # print("s:",s)
+    t =""
+    for i in range(0,len(s),4):
+        #print("t:",s[i:i+4])
+        t+= binary_to_hex(s[i:i+4])
+
+    return t
+
+
+a = "1c0111001f010100061a024b53535009181c"
+b = "686974207468652062756c6c277320657965"
+x = xor(a,b)
+print(x)
