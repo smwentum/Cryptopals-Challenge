@@ -50,6 +50,47 @@ def hex_to_binary(h:str):
     #print(s)
     return s
 
+def binary_to_hex(h:str):
+    '''Converts a binary string to a hexidecimal string'''
+    s = ""
+    #print(h)
+    match h:
+        case "0000":
+            s = "0"
+        case "0001":
+            s = "1"
+        case "0010":
+            s = "2"
+        case "0011":
+            s = "3"
+        case "0100":
+            s = "4"
+        case "0101":
+            s = "5"
+        case "0110":
+            s = "6"
+        case "0111":
+            s = "7"
+        case "1000":
+            s = "8"
+        case "1001":
+            s = "9"
+        case "1010":
+            s = "A"
+        case "1011":
+            s = "B"
+        case "1100":
+            s = "C"
+        case "1101":
+            s = "D"
+        case "1110":
+            s = "E"
+        case "E":
+            s = "F"
+    #print(s)
+    return s
+
+
 
 def convert_binary_to_base_64(b:str)-> str:
     s = ""
