@@ -1,10 +1,15 @@
-
 def convert_hex_to_binary(hex:str)->str:
-    #following the hint i am going to convert the hex string to base 2 then convert base 2 to base 64
-    s = "";
+    '''takes a hex string and converts it to a binary string'''
+    # following the hint i am going to convert the hex string to base 2
+    # then convert base 2 to base 64
+    s = ""
     for h in hex:
         s += hex_to_binary(h)
     return s
+
+def convert_binary_to_base_64(b:str)-> str:
+    return ""
+
 
 def hex_to_binary(h):
     '''Converts a hexidecimal string to a binary string'''
