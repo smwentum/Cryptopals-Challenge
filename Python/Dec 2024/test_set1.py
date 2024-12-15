@@ -110,6 +110,94 @@ def test_set1_15():
     b = hex_to_binary("F")
     assert b == "1111"
 
+
+
+def test_set1_hex_0():
+    '''Make sure the 0 works correctly'''
+    b = binary_to_hex("0000")
+    assert b == "0"
+
+def test_set1_hex_1():
+    '''Make sure the 1 works correctly'''
+    b = binary_to_hex("0001")
+    assert b == "1"
+
+def test_set1_hex_2():
+    '''Make sure the 2 works correctly'''
+    b = binary_to_hex("0010")
+    assert b == "2"
+
+def test_set1_hex_3():
+    '''Make sure the 3 works correctly'''
+    b = binary_to_hex("0011")
+    assert b == "3"
+
+def test_set1_hex_4():
+    '''Make sure the 4 works correctly'''
+    b = binary_to_hex("0100")
+    assert b == "4"
+
+def test_set1_hex_5():
+    '''Make sure the 5 works correctly'''
+    b = binary_to_hex("0101")
+    assert b == "5"
+
+def test_set1_hex_6():
+    '''Make sure the 6 works correctly'''
+    b = binary_to_hex("0110")
+    assert b == "6"
+
+def test_set1_hex_7():
+    '''Make sure the 7 works correctly'''
+    b = binary_to_hex("0111")
+    assert b == "7"
+
+def test_set1_hex_8():
+    '''Make sure the 8 works correctly'''
+    b = binary_to_hex("1000")
+    assert b == "8"
+
+def test_set1_hex_9():
+    '''Make sure the 9 works correctly'''
+    b = binary_to_hex("1001")
+    assert b == "9"
+
+def test_set1_hex_10():
+    '''Make sure the A works correctly'''
+    b = binary_to_hex("1010")
+    assert b == "A"
+
+def test_set1_hex_11():
+    '''Make sure the B works correctly'''
+    b = binary_to_hex("1011")
+    assert b == "B"
+
+
+def test_set1_hex_12():
+    '''Make sure the C works correctly'''
+    b = binary_to_hex("1100")
+    assert b == "C"
+
+def test_set1_hex_13():
+    '''Make sure the D works correctly'''
+    b = binary_to_hex("1101")
+    assert b == "D"
+
+def test_set1_hex_14():
+    '''Make sure the E works correctly'''
+    b = binary_to_hex("1110")
+    assert b == "E"
+
+def test_set1_hex_15():
+    '''Make sure the F works correctly'''
+    b = binary_to_hex("1111")
+    assert b == "F"
+
+
+
+
+
+
 def test_convert_hex_to_binary():
     '''Doing half the challenge'''
     b = convert_hex_to_binary("49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d")

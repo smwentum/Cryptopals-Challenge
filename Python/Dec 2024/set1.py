@@ -85,7 +85,7 @@ def binary_to_hex(h:str):
             s = "D"
         case "1110":
             s = "E"
-        case "E":
+        case "1111":
             s = "F"
     #print(s)
     return s
