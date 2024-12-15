@@ -243,3 +243,13 @@ def convert_hex_to_base_64(b)-> str:
     #print(s2)
     return convert_binary_to_base_64(s2)
 
+def xor(a,b)->str:
+    a1 = hex_to_binary(a)
+    b1 = hex_to_binary(b)
+    s =""
+    for i,_ in enumerate(a1):
+        if a1[i] == b1[i]:
+            s+= "0"
+        else:
+            s+="1"
+    return binary_to_hex(s)
