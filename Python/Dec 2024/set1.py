@@ -7,9 +7,6 @@ def convert_hex_to_binary(hex:str)->str:
         s += hex_to_binary(h)
     return s
 
-
-
-
 def hex_to_binary(h):
     '''Converts a hexidecimal string to a binary string'''
     h = h.capitalize()
@@ -62,6 +59,7 @@ def convert_binary_to_base_64(b:str)-> str:
 
 
 def convert_binary_str_to_base_64(b:str)->str:
+
     b = b.upper()
     s = ""
     match b:
