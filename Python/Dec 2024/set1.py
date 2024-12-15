@@ -1,16 +1,19 @@
-def convert_hex_to_binary(hex:str)->str:
+def convert_hex_to_binary(hex1):
     '''takes a hex string and converts it to a binary string'''
     # following the hint i am going to convert the hex string to base 2
     # then convert base 2 to base 64
+    #print("hex:",hex1)
     s = ""
-    for h in hex:
+    for h in hex1:
         s += hex_to_binary(h)
+    #print(s)
     return s
 
-def hex_to_binary(h):
+def hex_to_binary(h:str):
     '''Converts a hexidecimal string to a binary string'''
-    h = h.capitalize()
+    h = h.upper()
     s = ""
+    #print(h)
     match h:
         case "0":
             s = "0000"
@@ -53,13 +56,12 @@ def convert_binary_to_base_64(b:str)-> str:
     while len(b) % 6 != 0:
         b = "0"+b
     for i in range(0,len(b),6):
-        s = convert_binary_str_to_base_64(s[i:i+6])
-    return ""
-
-
+        #print(b[i:i+6])
+        s += convert_binary_str_to_base_64(b[i:i+6])
+    return s
 
 def convert_binary_str_to_base_64(b:str)->str:
-
+    #print("b:",b)
     b = b.upper()
     s = ""
     match b:
@@ -193,5 +195,10 @@ def convert_binary_str_to_base_64(b:str)->str:
         case "111111":
             s = "/"
 
-
     return s
+
+def convert_hex_to_base_64(b)-> str:
+    s2 = convert_hex_to_binary(b)
+    #print(s2)
+    return convert_binary_to_base_64(s2)
+
