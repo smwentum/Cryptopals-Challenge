@@ -1,5 +1,5 @@
 
-def convert_hex_to_base64(hex:str)->str:
+def convert_hex_to_binary(hex:str)->str:
     #following the hint i am going to convert the hex string to base 2 then convert base 2 to base 64
     s = "";
     for h in hex:

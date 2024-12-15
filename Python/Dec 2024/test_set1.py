@@ -2,23 +2,23 @@ from set1 import *
 
 def test_set1_0():
     '''Make sure the 0 works correctly'''
-    bin = hex_to_binary("0")
-    assert bin == "0000"
+    b = hex_to_binary("0")
+    assert b == "0000"
 
 def test_set1_1():
     '''Make sure the 1 works correctly'''
-    bin = hex_to_binary("1")
-    assert bin == "0001"
+    b = hex_to_binary("1")
+    assert b == "0001"
 
 def test_set1_2():
     '''Make sure the 2 works correctly'''
-    bin = hex_to_binary("2")
-    assert bin == "0010"
+    b = hex_to_binary("2")
+    assert b == "0010"
 
 def test_set1_3():
     '''Make sure the 3 works correctly'''
-    bin = hex_to_binary("3")
-    assert bin == "0011"
+    b = hex_to_binary("3")
+    assert b == "0011"
 
 def test_set1_4():
     '''Make sure the 4 works correctly'''
@@ -70,7 +70,7 @@ def test_set1_11():
     b = hex_to_binary("B")
     assert b == "1011"
 
-def test_set1_12_Lower():
+def test_set1_12_lower():
     '''Make sure the c works correctly'''
     b = hex_to_binary("c")
     assert b == "1100"
@@ -80,7 +80,7 @@ def test_set1_12():
     b = hex_to_binary("C")
     assert b == "1100"
 
-def test_set1_13_Lower():
+def test_set1_13_lower():
     '''Make sure the d works correctly'''
     b = hex_to_binary("d")
     assert b == "1101"
@@ -90,7 +90,7 @@ def test_set1_13():
     b = hex_to_binary("D")
     assert b == "1101"
 
-def test_set1_14_Lower():
+def test_set1_14_lower():
     '''Make sure the e works correctly'''
     b = hex_to_binary("e")
     assert b == "1110"
@@ -109,3 +109,8 @@ def test_set1_15():
     '''Make sure the F works correctly'''
     b = hex_to_binary("F")
     assert b == "1111"
+
+def test_convert_hex_to_binary():
+    '''Doing the challenge'''
+    b = convert_hex_to_binary("49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d")
+    assert "010010010010011101101101001000000110101101101001011011000110110001101001011011100110011100100000011110010110111101110101011100100010000001100010011100100110000101101001011011100010000001101100011010010110101101100101001000000110000100100000011100000110111101101001011100110110111101101110011011110111010101110011001000000110110101110101011100110110100001110010011011110110111101101101" ==b
