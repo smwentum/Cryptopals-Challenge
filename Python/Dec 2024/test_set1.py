@@ -380,15 +380,15 @@ def test_convert_binary_to_base_64_48():
     b = convert_binary_str_to_base_64("110000")
     assert b == 'w'
 
-# def test_convert_binary_to_base_64_17():
-#     '''doing 17 should get R'''
-#     b = convert_binary_str_to_base_64("110001")
-#     assert b == 'R'
+def test_convert_binary_to_base_64_49():
+    '''doing 49  should get x'''
+    b = convert_binary_str_to_base_64("110001")
+    assert b == 'x'
 
-# def test_convert_binary_to_base_64_18():
-#     '''doing 18 should get S'''
-#     b = convert_binary_str_to_base_64("110010")
-#     assert b == 'S'
+def test_convert_binary_to_base_64_50():
+    '''doing 50 should get y'''
+    b = convert_binary_str_to_base_64("110010")
+    assert b == 'y'
 
 
 # def test_convert_binary_to_base_64_19():
