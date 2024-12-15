@@ -7,8 +7,7 @@ def convert_hex_to_binary(hex:str)->str:
         s += hex_to_binary(h)
     return s
 
-def convert_binary_to_base_64(b:str)-> str:
-    return ""
+
 
 
 def hex_to_binary(h):
