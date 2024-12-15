@@ -551,3 +551,9 @@ def test_convert_binary_to_base_64_63():
 def test_convert_hex_to_base_64():
   b64=   convert_hex_to_base_64("49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d")
   assert b64 == "SSdtIGtpbGxpbmcgeW91ciBicmFpbiBsaWtlIGEgcG9pc29ub3VzIG11c2hyb29t"
+
+def test_xor():
+    a = "1c0111001f010100061a024b53535009181c"
+    b = "686974207468652062756c6c277320657965"
+    x = xor(a,b)
+    assert x == "746865206b696420646f6e277420706c6179".upper()
